@@ -59,9 +59,9 @@ class landsat_request:
 	
 
 		# READ LANDSAT DATA
-		#s3_scenes = pd.read_csv('http://landsat-pds.s3.amazonaws.com/c1/L8/scene_list.gz', compression='gzip') # Reads Entire File to Memory
+		s3_scenes = pd.read_csv('http://landsat-pds.s3.amazonaws.com/c1/L8/scene_list.gz', compression='gzip') # Reads Entire File to Memory
 		
-		s3_scenes = pd.read_csv(os.path.join(r'/Users/Andrew/Downloads/', 'scene_list'))
+		#s3_scenes = pd.read_csv(os.path.join(r'/Users/Andrew/Downloads/', 'scene_list'))
 		# Download Locally for Faster Reading
 		# Download Link: http://landsat-pds.s3.amazonaws.com/c1/L8/scene_list.gz
 
